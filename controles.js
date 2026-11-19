@@ -68,6 +68,7 @@ export function configurarControles(canvas, alArrastrar, alTocar) {
     });
 
     canvas.addEventListener("pointercancel", function(evento) {
+        console.log("TOQUE CANCELADO", evento.pointerId)
         arrastrando = false;
     });
 }
